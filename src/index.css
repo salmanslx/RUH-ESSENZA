@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 30% 95%; /* Lightest (Ivory) */
+    --foreground: 40 10% 50%; /* Deep Taupe */
+
+    --card: 40 30% 95%;
+    --card-foreground: 40 10% 50%;
+
+    --popover: 40 30% 95%;
+    --popover-foreground: 40 10% 50%;
+
+    --primary: 40 10% 50%;
+    --primary-foreground: 40 30% 95%;
+
+    --secondary: 40 25% 85%;
+    --secondary-foreground: 40 10% 50%;
+
+    --muted: 40 25% 85%;
+    --muted-foreground: 40 15% 65%;
+
+    --accent: 40 25% 85%;
+    --accent-foreground: 40 10% 50%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 40 30% 95%;
+
+    --border: 40 20% 75%;
+    --input: 40 20% 75%;
+    --ring: 40 10% 50%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 40 30% 95%;
+    --sidebar-foreground: 40 10% 50%;
+    --sidebar-primary: 40 10% 50%;
+    --sidebar-primary-foreground: 40 30% 95%;
+    --sidebar-accent: 40 25% 85%;
+    --sidebar-accent-foreground: 40 10% 50%;
+    --sidebar-border: 40 20% 75%;
+    --sidebar-ring: 40 10% 50%;
+  }
+
+  .dark {
+    --background: 40 10% 50%;
+    --foreground: 40 30% 95%;
+
+    --card: 40 10% 50%;
+    --card-foreground: 40 30% 95%;
+
+    --popover: 40 10% 50%;
+    --popover-foreground: 40 30% 95%;
+
+    --primary: 40 30% 95%;
+    --primary-foreground: 40 10% 50%;
+
+    --secondary: 40 15% 65%;
+    --secondary-foreground: 40 30% 95%;
+
+    --muted: 40 15% 65%;
+    --muted-foreground: 40 25% 85%;
+
+    --accent: 40 15% 65%;
+    --accent-foreground: 40 30% 95%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 40 30% 95%;
+
+    --border: 40 15% 65%;
+    --input: 40 15% 65%;
+    --ring: 40 25% 85%;
+
+    --sidebar-background: 40 10% 50%;
+    --sidebar-foreground: 40 25% 85%;
+    --sidebar-primary: 40 30% 95%;
+    --sidebar-primary-foreground: 40 10% 50%;
+    --sidebar-accent: 40 15% 65%;
+    --sidebar-accent-foreground: 40 25% 85%;
+    --sidebar-border: 40 15% 65%;
+    --sidebar-ring: 40 25% 85%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+/* Override Swiper navigation arrows to white */
+.swiper-button-next,
+.swiper-button-prev {
+  color: black !important;
+}
+
+/* Optional: change arrow hover color or add shadow for visibility */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #fff;
+  filter: drop-shadow(0 0 2px rgba(94, 93, 93, 0.7));
+}
+.swiper-pagination-bullet {
+  background-color: #7c5e1a !important; /* amber/brown */
+  opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #7c5e1a !important;
+  opacity: 1;
+}
